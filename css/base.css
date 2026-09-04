@@ -155,7 +155,7 @@ footer {
 
 /* SECTIONS */
 section {
-    margin-bottom: var(--size-xl);
+    margin-bottom: 5rem;
 }
 
 /* ===================================== */

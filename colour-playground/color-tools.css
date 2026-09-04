@@ -1,7 +1,11 @@
-main {
+#color-gen {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
+
+    h1 {
+        grid-area: 1 / 1 / 2/ 3;
+    }
 }
 
 h1 {
@@ -20,7 +24,7 @@ h1 {
 
 .colour-controls {
     flex-direction: column;
-    grid-area: 2 / 1 / 2 / 3;
+    grid-area: 3 / 1 / 3 / 3;
     gap: 1rem;
 }
 
@@ -30,8 +34,24 @@ h1 {
     gap: 1rem;
 }
 
+.converter {
+    margin-bottom: 3rem;
+}
+
 input[type=color] {
     width: 100%;
     border: var(--border-small);
     background: none;
+}
+
+input[type=number],
+input[type=text] {
+    border: var(--border-small);
+    background: none;
+}
+
+.rgb-input {
+    display: inline-flex;
+    gap: 1rem;
+    flex-direction: column;
 }
