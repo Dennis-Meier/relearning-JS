@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-preview {
+    background: #8e7e7e;
+    width: 400px;
+    height: 200px;
+    border: var(--border-small);
+}
+
+input[type=color] {
+    margin: 2rem 0;
+    width: 400px;
+    border: var(--border-small);
+    background: none;
+}

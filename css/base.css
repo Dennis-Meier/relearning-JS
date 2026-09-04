@@ -1,0 +1,157 @@
+/* ---=== BASE ===--- */
+
+@import url("https://use.typekit.net/njx7drz.css");
+
+:root {
+    --orange-0: rgb(186, 70, 39);
+    --orange-100: rgb(198, 121, 103);
+
+    --green-0: rgb(24, 46, 20);
+    --green-25: rgb(109, 127, 91);
+    --green-50: rgb(133, 152, 104);
+    --green-75: rgb(214, 226, 197);
+
+    --purple-0: rgb(69, 46, 90);
+
+    /* BORDER */
+    --border-dashed: var(--orange-0) dashed 4px;
+    --border: var(--green-25) solid 8px;
+    --border-small: var(--green-25) solid 4px;
+    --border-small-hover: var(--green-25) dashed 4px;
+
+    /* FONTS */
+    --heading: clamp(32px, 6rem, 8rem) lores-12-bold-alt-oakland, sans-serif;
+    --subheading: clamp(24px, 4rem, 32px) lores-12-bold-alt-oakland, sans-serif;
+    --subheading-small: 700 clamp(16px, 2rem, 24px) lores-12, sans-serif;
+
+    --paragraph-big: 700 clamp(14px, 1.4rem, 16px) realist, sans-serif;
+    --paragraph: clamp(12px, 1.3rem, 14px) realist, sans-serif;
+    --paragraph-light: clamp(12px, 1.3rem, 14px) realist, sans-serif;
+}
+
+body {
+    background: var(--green-75);
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: min(100% - 2rem, 1920px);
+    margin-inline: auto;
+}
+
+img,
+video {
+    display: block;
+    width: 100%;
+    border: var(--border-small);
+}
+
+/* SVG */
+.logo {
+    fill: var(--orange-0);
+}
+
+/* ATTRIBUTES */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    padding-bottom: 2rem;
+}
+
+.no-border {
+    border: none;
+}
+
+/* MAIN */
+main {
+    padding: 2rem 2dvw;
+}
+
+/* FOOTER */
+footer {
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+/* BUTTON */
+button {
+    border: var(--border-dashed);
+    padding: 1em;
+    background: none;
+
+    p {
+        margin: 0;
+        font: var(--paragraph-big);
+    }
+}
+
+button:hover {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+button:active {
+    border-color: var(--purple-0);
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/* CARDS */
+.card-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border: var(--border-small);
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+
+    p,
+    h3,
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        color: var(--green-25);
+    }
+}
+
+.card:hover {
+    border: var(--border-small-hover);
+}
+
+.card:active {
+    border-color: var(--purple-0);
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: var(--size-xl);
+}
+
+/* ==== PHONE ==== */
+@media (max-width: 700px) {
+    :root {
+        --border: var(--green-25) solid 4px;
+        --border-small: var(--green-50) solid 3px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+}

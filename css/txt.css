@@ -1,0 +1,57 @@
+* {
+    line-height: 150%;
+}
+
+/* TEXT */
+h1 {
+    font: var(--heading);
+    color: var(--green-0);
+}
+
+h2 {
+    font: var(--subheading);
+    color: var(--green-0);
+}
+
+h3 {
+    font: var(--subheading-small);
+    color: var(--green-0);
+    margin: 0;
+}
+
+ul {
+    list-style-type: "# ";
+}
+
+p,
+li {
+    font: var(--paragraph);
+    color: var(--green-0);
+    text-wrap: pretty;
+}
+
+p.bold {
+    font: var(--paragraph-big);
+    color: var(--orange-0);
+}
+
+strong {
+    color: var(--green-0);
+}
+
+/* links */
+a {
+    font: var(--paragraph-big);
+    color: var(--orange-0);
+}
+
+a:hover,
+.active {
+    transition: color 0.2s;
+    color: var(--purple-0);
+    text-decoration: underline;
+}
+
+div a {
+    text-decoration: none;
+}

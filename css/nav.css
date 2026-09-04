@@ -1,0 +1,62 @@
+/* NAV desktop */
+.nav-desktop {
+    display: grid;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    grid-template-columns: auto 5vw 5vw auto;
+
+
+    .logo {
+        width: 100px;
+        margin-top: 1.5rem;
+    }
+
+    h1 {
+        grid-area: 1 / 4/ 3;
+        margin: 0;
+        text-align: end;
+        text-transform: uppercase;
+    }
+
+    nav {
+        grid-area: 2 / 1 / 2 / 3;
+
+        ul {
+            display: flex;
+            align-items: end;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--green-0);
+        }
+    }
+}
+
+/* NAV small */
+.nav-small {
+    padding: 0 1rem;
+    border: var(--border);
+
+    .logo {
+        width: 40px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--green-0);
+        }
+    }
+}
