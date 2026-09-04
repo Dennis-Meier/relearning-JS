@@ -1,11 +1,13 @@
 const colorPicker = document.querySelector("#color-picker");
 const colorPreview = document.querySelector(".color-preview")
+// Value Displays
 const hexDisplay = document.querySelector("#hex-value")
 const rgbDisplay = document.querySelector("#rgb-value")
+// Buttons 
 const randomColorButton = document.querySelector("#random-color")
 const copyHex = document.getElementById("copy-hex")
 const copyRgb = document.getElementById("copy-rgb")
-
+// Values
 let hexValue
 let rgbValue
 
@@ -33,8 +35,22 @@ function randomColor() {
 
 colorPicker.addEventListener("input", function () {
     hexValue = colorPicker.value;
+    rgbValue = hex2rgb(hexValue)
+
     updateColor()
 });
+
+function hex2rgb(hex) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+
+    let rgb = `R: ${r} G: ${g} B: ${b}`;
+
+    console.log(rgb)
+
+    return rgb
+};
 
 
 randomColorButton.addEventListener("click", function () {
