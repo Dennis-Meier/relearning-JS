@@ -11,11 +11,11 @@ function updateColor() {
 };
 
 function randomColor() {
-    red = Math.floor(Math.random() * 256).toString(16);
-    green = Math.floor(Math.random() * 256).toString(16);
-    blue = Math.floor(Math.random() * 256).toString(16);
+    let red = Math.floor(Math.random() * 256).toString(16).padStart(2, "0");
+    let green = Math.floor(Math.random() * 256).toString(16).padStart(2, "0");
+    let blue = Math.floor(Math.random() * 256).toString(16).padStart(2, "0");
 
-    rgb = "#" + red + green + blue
+    let rgb = "#" + red + green + blue
 
     return rgb
 };

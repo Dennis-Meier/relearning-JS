@@ -55,3 +55,24 @@ a:hover,
 div a {
     text-decoration: none;
 }
+
+/* BUTTON */
+button {
+    border: var(--border-dashed);
+    padding: 1em;
+    background: none;
+
+    margin: 0;
+    font: var(--paragraph-big);
+}
+
+button:hover {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+button:active {
+    border-color: var(--purple-0);
+    padding: 0.5em;
+    margin: 0.5em;
+}
