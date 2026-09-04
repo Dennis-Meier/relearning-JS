@@ -33,6 +33,14 @@
             text-decoration: none;
             color: var(--green-0);
         }
+
+        a:hover,
+        .active {
+            transition: color 0.2s;
+            color: var(--purple-0);
+            text-decoration: underline;
+        }
+
     }
 }
 
@@ -58,5 +66,13 @@
             text-decoration: none;
             color: var(--green-0);
         }
+
+        a:hover,
+        .active {
+            transition: color 0.2s;
+            color: var(--purple-0);
+            text-decoration: underline;
+        }
+
     }
 }

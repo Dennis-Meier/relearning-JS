@@ -45,8 +45,7 @@ a {
     color: var(--orange-0);
 }
 
-a:hover,
-.active {
+a:hover {
     transition: color 0.2s;
     color: var(--purple-0);
     text-decoration: underline;
@@ -67,12 +66,13 @@ button {
 }
 
 button:hover {
-    padding: 0.5em;
-    margin: 0.5em;
+    border-color: var(--purple-0);
+    /* padding: 0.5em;
+    margin: 0.5em; */
 }
 
 button:active {
-    border-color: var(--purple-0);
+    border-color: var(--orange-0);
     padding: 0.5em;
     margin: 0.5em;
 }

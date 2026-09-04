@@ -17,7 +17,6 @@
     --border-dashed: var(--orange-0) dashed 4px;
     --border: var(--green-25) solid 8px;
     --border-small: var(--green-25) solid 4px;
-    --border-small-hover: var(--green-25) dashed 4px;
 
     /* FONTS */
     --heading: clamp(32px, 6rem, 8rem) lores-12-bold-alt-oakland, sans-serif;
@@ -28,6 +27,8 @@
     --paragraph: clamp(12px, 1.3rem, 14px) realist, sans-serif;
     --paragraph-light: clamp(12px, 1.3rem, 14px) realist, sans-serif;
 }
+
+/* ===================================== */
 
 body {
     background: var(--green-75);
@@ -46,10 +47,40 @@ video {
     border: var(--border-small);
 }
 
+/* ===================================== */
+
 /* SVG */
 .logo {
+    transition: fill 0.2s;
     fill: var(--orange-0);
 }
+
+.logo:hover {
+    fill: var(--purple-0);
+}
+
+.logo:active {
+    fill: var(--orange-0);
+}
+
+.copy {
+    fill: none;
+    stroke: var(--orange-0);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.copy:hover {
+    transition: stroke 0.2s;
+    stroke: var(--purple-0);
+}
+
+.copy:active {
+    stroke: var(--orange-0);
+}
+
+/* ===================================== */
 
 /* ATTRIBUTES */
 .grid {
@@ -71,10 +102,14 @@ video {
     border: none;
 }
 
+/* ===================================== */
+
 /* MAIN */
 main {
     padding: 2rem 2dvw;
 }
+
+/* ===================================== */
 
 /* FOOTER */
 footer {
@@ -82,6 +117,8 @@ footer {
     padding: 0.5rem 1rem;
     justify-content: space-between;
 }
+
+/* ===================================== */
 
 /* CARDS */
 .card-cont {
@@ -97,8 +134,7 @@ footer {
     flex-flow: column nowrap;
 
     p,
-    h3,
-    h2 {
+    h3 {
         margin: 0;
     }
 
@@ -108,17 +144,21 @@ footer {
 }
 
 .card:hover {
-    border: var(--border-small-hover);
+    border-color: var(--purple-0);
 }
 
 .card:active {
-    border-color: var(--purple-0);
+    border-color: var(--green-25);
 }
+
+/* ===================================== */
 
 /* SECTIONS */
 section {
     margin-bottom: var(--size-xl);
 }
+
+/* ===================================== */
 
 /* ==== PHONE ==== */
 @media (max-width: 700px) {

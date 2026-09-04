@@ -1,7 +1,12 @@
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 0 10rem;
+}
+
+h1 {
+    margin: 0;
 }
 
 * {
@@ -10,14 +15,24 @@ main {
 
 .color-preview {
     background: #8e7e7e;
-    width: 400px;
-    height: 200px;
+    width: 100%;
     border: var(--border-small);
 }
 
+.colour-controls {
+    flex-direction: column;
+    grid-area: 2 / 1 / 2 / 3;
+    gap: 1rem;
+}
+
+.color-value {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 input[type=color] {
-    margin: 2rem 0;
-    width: 400px;
+    width: 100%;
     border: var(--border-small);
     background: none;
 }

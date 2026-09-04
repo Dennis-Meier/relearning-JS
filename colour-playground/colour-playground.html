@@ -37,19 +37,43 @@
     </header>
     <div class="wrapper">
 
+        <h1>Color Playground</h1>
         <main>
-            <h1>Color Playground</h1>
-
-
             <div class="color-preview"></div>
 
-            <input type="color" id="color-picker">
+            <div>
+                <h3>Colour value:</h3>
+                <div class="color-value">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="copy"
+                        id="copy-hex">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                    </svg>
+                    <p><strong>HEX: </strong> <span id="hex-value">#000000</span></p>
+                    </p>
+                </div>
+                <div class="color-value">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="copy"
+                        id="copy-rgb">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                    </svg>
+                    <p><strong>RGB: </strong> <span id="rgb-value">R: 0 G: 0 B: 0</span>
+                    </p>
+                </div>
+            </div>
 
-            <button id="random-color">
-                Random colour
-            </button>
+            <div class="flex colour-controls">
+                <div class="color-input">
+                    <h3>Input your own color:</h3>
+                    <input type="color" id="color-picker">
+                </div>
 
-            <p>HEX: <span id="hex-value">#000000</span></p>
+                <button id="random-color">
+                    Random colour
+                </button>
+
+            </div>
         </main>
 
     </div>
