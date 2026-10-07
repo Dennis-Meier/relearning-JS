@@ -1,7 +1,7 @@
 #color-gen {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 1rem;
 
     h1 {
         grid-area: 1 / 1 / 2/ 3;
@@ -17,8 +17,7 @@ h1 {
 }
 
 .color-preview {
-    background: #8e7e7e;
-    width: 100%;
+    background: none;
     border: var(--border-small);
 }
 
@@ -32,6 +31,10 @@ h1 {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    p {
+        margin: 0.2rem;
+    }
 }
 
 .converter {

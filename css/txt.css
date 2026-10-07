@@ -62,17 +62,22 @@ button {
     background: none;
 
     margin: 0;
-    font: var(--paragraph-big);
+    font: var(--subheading-small);
 }
 
 button:hover {
     border-color: var(--purple-0);
-    /* padding: 0.5em;
-    margin: 0.5em; */
 }
 
 button:active {
     border-color: var(--orange-0);
     padding: 0.5em;
     margin: 0.5em;
+}
+
+/* ERROR */
+.error {
+    color: var(--orange-0);
+    font-weight: 700;
+    display: none;
 }

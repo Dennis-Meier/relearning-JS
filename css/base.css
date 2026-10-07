@@ -19,13 +19,13 @@
     --border-small: var(--green-25) solid 4px;
 
     /* FONTS */
-    --heading: clamp(32px, 6rem, 8rem) lores-12-bold-alt-oakland, sans-serif;
-    --subheading: clamp(24px, 4rem, 32px) lores-12-bold-alt-oakland, sans-serif;
+    --heading: 6rem lores-12-bold-alt-oakland, sans-serif;
+    --subheading: 4rem lores-12-bold-alt-oakland, sans-serif;
     --subheading-small: 700 clamp(16px, 2rem, 24px) lores-12, sans-serif;
 
-    --paragraph-big: 700 clamp(14px, 1.4rem, 16px) realist, sans-serif;
-    --paragraph: clamp(12px, 1.3rem, 14px) realist, sans-serif;
-    --paragraph-light: clamp(12px, 1.3rem, 14px) realist, sans-serif;
+    --paragraph-big: 700 1.1rem realist, sans-serif;
+    --paragraph: 1rem realist, sans-serif;
+    --paragraph-light: 1rem realist, sans-serif;
 }
 
 /* ===================================== */
@@ -113,6 +113,8 @@ main {
 
 /* FOOTER */
 footer {
+    position: absolute;
+    bottom: 8px;
     border: var(--border);
     padding: 0.5rem 1rem;
     justify-content: space-between;
@@ -165,10 +167,12 @@ section {
     :root {
         --border: var(--green-25) solid 4px;
         --border-small: var(--green-50) solid 3px;
+
+        --heading: 3rem lores-12-bold-alt-oakland, sans-serif;
+        --subheading: 2rem lores-12-bold-alt-oakland, sans-serif;
     }
 
     .flex {
         flex-direction: column;
-        gap: 0;
     }
 }

@@ -29,7 +29,7 @@
                             <rect width="52.18" height="52.25" />
                         </svg>
                     </li>
-                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
@@ -51,7 +51,9 @@
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                         </svg>
                         <p><strong>HEX: </strong> <span id="hex-value">#000000</span></p>
-                        </p>
+
+                        <p class="error" id="error-hex">error color value not found</p>
+
                     </div>
                     <div class="color-value">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="copy"
@@ -59,8 +61,8 @@
                             <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                         </svg>
-                        <p><strong>RGB: </strong> <span id="rgb-value">R: 0 G: 0 B: 0</span>
-                        </p>
+                        <p><strong>RGB: </strong><span id="rgb-value">rgb(0, 0, 0)</span>
+                        <p class="error" id="error-rgb">error color value not found</p>
                     </div>
                 </div>
 
@@ -79,12 +81,13 @@
 
             <section id="color-converter">
                 <h1>Color Converter</h1>
+
                 <div class="converter">
                     <h3>HEX to RGB</h3>
-
                     <input type="text" placeholder="#00000" id="hex-input">
                 </div>
-                <div>
+
+                <div class="converter">
                     <h3>RGB to HEX</h3>
                     <div class="rgb-input">
                         <input type="number" placeholder="Red" id="r-input">
@@ -97,7 +100,7 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="colour-playground.js"></script>
     <script src="/scripts/main.js"></script>
 
 </body>
