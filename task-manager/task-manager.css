@@ -1,0 +1,23 @@
+main {
+    padding-top: 8rem;
+}
+
+#add-task {
+    border: var(--border);
+    padding: 1rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+#tasks {
+    border: var(--border);
+    padding: 1rem;
+}

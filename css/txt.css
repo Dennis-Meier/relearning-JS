@@ -6,17 +6,19 @@
 h1 {
     font: var(--heading);
     color: var(--green-0);
+    margin: 0
 }
 
 h2 {
     font: var(--subheading);
     color: var(--green-0);
+    margin: 0
 }
 
 h3 {
     font: var(--subheading-small);
     color: var(--green-0);
-    margin: 0;
+    margin: 0
 }
 
 ul {
@@ -28,11 +30,17 @@ li {
     font: var(--paragraph);
     color: var(--green-0);
     text-wrap: pretty;
+    margin: 0
 }
 
-p.bold {
+p.big {
     font: var(--paragraph-big);
     color: var(--orange-0);
+}
+
+p.light {
+    font: var(--paragraph-light);
+    color: var(--green-25);
 }
 
 strong {
@@ -45,10 +53,26 @@ a {
     color: var(--orange-0);
 }
 
-a:hover {
+a:hover,
+.active {
     transition: color 0.2s;
     color: var(--purple-0);
     text-decoration: underline;
+}
+
+nav {
+    ul {
+        display: flex;
+        align-items: end;
+        list-style-type: none;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--green-0);
+    }
 }
 
 div a {
@@ -76,8 +100,23 @@ button:active {
 }
 
 /* ERROR */
-.error {
+.info-text {
     color: var(--orange-0);
     font-weight: 700;
     display: none;
+}
+
+/* ===================================== */
+
+input[type=color] {
+    width: 100%;
+    border: var(--border-small);
+    background: none;
+}
+
+input[type=number],
+input[type=text] {
+    border: var(--border-small);
+    background: none;
+    padding: 0.2rem;
 }

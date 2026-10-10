@@ -7,62 +7,85 @@
 
     <title>Color Playground</title>
 
-    <link rel="stylesheet" href="color-tools.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/txt.css">
+    <link rel="stylesheet" href="color-tools.css">
+    <link rel="stylesheet" href="/css/breakpoints.css">
 
+    <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="nav-small">
-            <nav>
-                <ul>
-                    <li>
-                        <svg class="logo" viewBox="0 0 339.26 417.6">
-                            <rect x="287.08" width="52.19" height="52.25" />
-                            <path
-                                d="M287.08,260.99h-78.28v-26.09h-26.09v-52.18h-52.25v52.18h-26.09v26.09h-52.18V104.43H0v182.65h26.09v26.09h52.18v78.34h26.09v26.09h78.34v-26.09h26.09v-26.15h26.09v-52.18h78.28v-26.09h26.09V104.43h-52.19v156.55ZM182.71,365.36h-52.25v-52.18h52.25v52.18Z" />
-                            <polygon
-                                points="130.46 156.62 182.71 156.62 182.71 130.52 208.8 130.52 208.8 78.34 104.37 78.34 104.37 130.52 130.46 130.52 130.46 156.62" />
-                            <rect width="52.18" height="52.25" />
-                        </svg>
-                    </li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="mobile">
+        <a href="/index.html">
+            <svg class="logo-big" id="logo" viewBox="0 0 450.58 156.69">
+                <rect class="cls-1" x="106.96" y=".55" width="19.44" height="19.47" />
+                <rect class="cls-1" x="329.6" y="137.22" width="19.44" height="19.47" />
+                <path class="cls-1"
+                    d="M48.61,117.23h19.47v19.44h-19.47v-19.44ZM106.96,39.46v58.33h-29.16v-9.72h-9.72v-19.44h-19.47v19.44h-9.72v9.72h-19.44v-58.33H0v68.05h9.72v9.72h19.44v29.19h9.72v9.72h29.19v-9.72h9.72v-9.74h9.72v-19.44h29.17v-9.72h9.72V39.46h-19.44Z" />
+                <polygon class="cls-1"
+                    points="48.61 49.18 38.89 49.18 38.89 29.73 77.8 29.73 77.8 49.18 68.08 49.18 68.08 58.9 48.61 58.9 48.61 49.18" />
+                <rect class="cls-1" y=".55" width="19.44" height="19.47" />
+                <path class="text"
+                    d="M173.96,97.82v17.6h-5.63v11.7h-5.38v-11.7h-5.63v-17.6h-11.43v58.87h5.8v-29.3h5.46v17.6h11.43v-17.6h5.38v29.3h11.43v-58.87h-11.43ZM196.31,97.82v58.87h28.24v-6.07h-16.81v-23.23h11.26v-6.07h-11.26v-17.42h16.81v-6.07h-28.24ZM229.94,156.69h11.43v-58.87h-11.43v58.87ZM252.38,97.82v58.87h28.24v-6.07h-16.81v-23.23h11.27v-6.07h-11.27v-17.42h16.81v-6.07h-28.24ZM286,97.82v58.87h11.43v-52.79h11.01v23.32h-5.63v6.07h5.63v23.41h11.43v-23.67h-5.63v-5.54h5.63v-23.76h-5.63v-5.9h-28.24Z" />
+                <path class="text"
+                    d="M145.88,0v78.35h15.93V8.08h15.34v62.18h-7.85v8.09h15.93v-7.74h7.84V7.85h-7.84V0h-39.35ZM208.3,0v78.35h39.34v-8.09h-23.42v-30.92h15.69v-8.07h-15.69V8.08h23.42V0h-39.34ZM294.25,0v46.84h-7.49v-15.57h-7.85v-15.69h-7.85V0h-15.93v78.35h8.07V31.5h7.61v15.69h7.74v15.58h7.85v15.58h15.92V0h-8.08ZM356.67,0v46.84h-7.49v-15.57h-7.85v-15.69h-7.85V0h-15.93v78.35h8.07V31.5h7.61v15.69h7.74v15.58h7.84v15.58h15.93V0h-8.08ZM379.97,78.35h15.93V0h-15.93v78.34ZM419.08,0v7.85h-7.85v31.5h7.85v7.85h15.58v23.07h-15.23v-7.72h-8.2v8.07h7.85v7.74h23.77v-7.74h7.72v-31.62h-7.72v-7.72h-15.7V8.08h15.35v7.85h8.07V7.85h-7.72V0h-23.77Z" />
+            </svg>
+            <svg id="logo" class="logo" viewBox="0 0 339.26 417.6">
+                <rect class="cls-1" x="287.08" width="52.18" height="52.25" />
+                <path class="cls-1"
+                    d="M287.08,260.99h-78.28v-26.09h-26.09v-52.18h-52.25v52.18h-26.09v26.09h-52.18V104.43H0v182.65h26.09v26.09h52.18v78.34h26.09v26.09h78.34v-26.09h26.09v-26.15h26.09v-52.18h78.28v-26.09h26.09V104.43h-52.18v156.55ZM182.71,365.36h-52.25v-52.18h52.25v52.18Z" />
+                <polygon class="cls-1"
+                    points="130.46 130.52 104.37 130.52 104.37 78.34 208.8 78.34 208.8 130.52 182.71 130.52 182.71 156.62 130.46 156.62 130.46 130.52" />
+                <rect class="cls-1" width="52.18" height="52.25" />
+            </svg>
+        </a>
+        <h1>Cool Tools</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="wrapper">
-
         <main>
+            <h1>Color Playground</h1>
             <section id="color-gen">
-                <h1>Color Playground</h1>
-                <div class="color-preview"></div>
-
-                <div class="color-values">
-                    <h3>Colour value:</h3>
-                    <div class="color-value">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="copy"
-                            id="copy-hex">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-                        </svg>
-                        <p><strong>HEX: </strong> <span id="hex-value">#000000</span></p>
-
-                        <p class="error" id="error-hex">error color value not found</p>
-
+                <h2>Color GEN</h2>
+                <p class="light">Generate a random colour or inpur your own and then see it in the previewer. You can
+                    also copy the
+                    RGB and HEX value or the colour. <br> Have fun :D</p>
+                <div class="color-viewer flex">
+                    <div class="color-preview">
+                        <p>preview your colour here</p>
                     </div>
-                    <div class="color-value">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="copy"
-                            id="copy-rgb">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-                        </svg>
-                        <p><strong>RGB: </strong><span id="rgb-value">rgb(0, 0, 0)</span>
-                        <p class="error" id="error-rgb">error color value not found</p>
+
+                    <div class="color-values">
+                        <h3>Colour value</h3>
+
+                        <div class="color-value">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="copy" id="copy-hex">
+                                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                            </svg>
+                            <p><strong>HEX: </strong> <span id="hex-value">#000000</span></p>
+                            <p class="info-text" id="error-hex">error color value not found</p>
+                            <p class="info-text" id="copied-hex">copied!</p>
+                        </div>
+
+                        <div class="color-value">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                class="copy" id="copy-rgb">
+                                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                            </svg>
+                            <p><strong>RGB: </strong><span id="rgb-value">rgb(0, 0, 0)</span>
+                            <p class="info-text" id="error-rgb">error color value not found</p>
+                            <p class="info-text" id="copied-rgb">copied!</p>
+                        </div>
                     </div>
                 </div>
 
@@ -71,28 +94,31 @@
                         <h3>Input your own color:</h3>
                         <input type="color" id="color-picker">
                     </div>
-
                     <button id="random-color">
                         Random colour
                     </button>
-
                 </div>
             </section>
 
             <section id="color-converter">
-                <h1>Color Converter</h1>
+                <h2>Color Converter</h2>
+                <p class="light">Convert your HEX colour code to RGB or the other way around. The converted colour code
+                    will be in your clipboard ready to paste any time.</p>
+                <div class="converter-cont flex">
+                    <div class="converter">
+                        <h3>HEX to RGB</h3>
+                        <input type="text" placeholder="#00000" id="hex-input">
+                        <button> Submit </button>
+                    </div>
 
-                <div class="converter">
-                    <h3>HEX to RGB</h3>
-                    <input type="text" placeholder="#00000" id="hex-input">
-                </div>
-
-                <div class="converter">
-                    <h3>RGB to HEX</h3>
-                    <div class="rgb-input">
-                        <input type="number" placeholder="Red" id="r-input">
-                        <input type="number" placeholder="Green" id="g-input">
-                        <input type="number" placeholder="Blue" id="b-input">
+                    <div class="converter">
+                        <h3>RGB to HEX</h3>
+                        <div class="rgb-input flex">
+                            <input type="number" placeholder="Red" id="r-input">
+                            <input type="number" placeholder="Green" id="g-input">
+                            <input type="number" placeholder="Blue" id="b-input">
+                        </div>
+                        <button> Submit </button>
                     </div>
                 </div>
             </section>

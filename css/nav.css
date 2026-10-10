@@ -1,82 +1,63 @@
 /* NAV desktop */
-.nav-desktop {
+.desktop {
     display: grid;
     border: var(--border);
     padding: 0.5rem 1rem;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+
+    .logo-big {
+        width: max-content;
+        margin-top: 1.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        grid-area: 2 / 1 / 2 / 1;
+    }
 
     h1 {
-        /* grid-area: 1 / 4/ 2; */
         margin: 0;
         text-align: end;
         text-transform: uppercase;
     }
-
-    nav {
-        grid-area: 2 / 1 / 2 / 3;
-
-        ul {
-            display: flex;
-            align-items: end;
-            list-style-type: none;
-            justify-content: space-between;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--green-0);
-            font: var(--paragraph-big);
-        }
-
-        a:hover,
-        .active {
-            transition: color 0.2s;
-            color: var(--purple-0);
-            text-decoration: underline;
-        }
-
-    }
 }
 
-.logo {
-    height: 80px;
-    margin-top: 1.5rem;
-}
-
-/* NAV small */
-.nav-small {
-    padding: 0.5rem 1rem;
+/* NAV mobile */
+.mobile {
+    display: grid;
     border: var(--border);
+    padding: 1rem 0.5rem;
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    top: 8;
+
+    transition: top 0.5s;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    .logo-big {
+        display: none;
+    }
 
     .logo {
         width: 40px;
-        margin-top: 0.5rem;
     }
 
-    nav {
-        ul {
-            display: flex;
-            align-items: center;
-            list-style-type: none;
-            justify-content: space-between;
-            padding: 0;
-            margin: 0;
-        }
+    ul {
+        align-items: center;
+    }
 
-        a {
-            text-decoration: none;
-            color: var(--green-0);
-            font: var(--paragraph-big);
-
-        }
-
-        a:hover,
-        .active {
-            transition: color 0.2s;
-            color: var(--purple-0);
-            text-decoration: underline;
-        }
-
+    h1 {
+        display: none;
     }
 }

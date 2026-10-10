@@ -1,0 +1,31 @@
+/* ==== PHONE ==== */
+@media (max-width: 700px) {
+    :root {
+        --border: var(--green-25) solid 4px;
+        --border-small: var(--green-50) solid 3px;
+
+        --heading: 3rem lores-12-bold-alt-oakland, sans-serif;
+        --subheading: 2rem lores-12, sans-serif;
+        --subheading-small: 700 1.2rem realist, sans-serif;
+    }
+
+    main {
+        padding: 0 0.5rem;
+        padding-top: 8rem;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    /* COLOUR PLAYGROUND */
+    .converter {
+        width: 100%;
+        text-align: start;
+    }
+
+    .color-preview {
+        min-height: 100px;
+    }
+
+}
