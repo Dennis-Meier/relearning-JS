@@ -18,6 +18,7 @@ main {
 }
 
 #tasks {
+    /* display: none; */
     border: var(--border);
     padding: 1rem;
 }
